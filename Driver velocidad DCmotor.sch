@@ -4718,6 +4718,7 @@ Grid 5.00 mm&lt;p&gt;
 <part name="R2" library="adafruit" deviceset="R-US_" device="M1206" value="1k"/>
 <part name="R3" library="adafruit" deviceset="R-US_" device="M1206" value="220"/>
 <part name="R4" library="adafruit" deviceset="R-US_" device="M1206" value="220"/>
+<part name="R5" library="adafruit" deviceset="R-US_" device="M1206" value="330"/>
 </parts>
 <sheets>
 <sheet>
@@ -4741,6 +4742,7 @@ David Sanchez Guzman</text>
 <instance part="R2" gate="G$1" x="63.5" y="55.88" rot="R90"/>
 <instance part="R3" gate="G$1" x="88.9" y="30.48" rot="R90"/>
 <instance part="R4" gate="G$1" x="76.2" y="40.64" rot="R180"/>
+<instance part="R5" gate="G$1" x="35.56" y="60.96" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4749,8 +4751,7 @@ David Sanchez Guzman</text>
 <segment>
 <pinref part="T1" gate="A" pin="G"/>
 <wire x1="45.72" y1="66.04" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D3"/>
-<wire x1="35.56" y1="66.04" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4853,6 +4854,12 @@ David Sanchez Guzman</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="40.64" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="40.64" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D3"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
